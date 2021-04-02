@@ -9,7 +9,9 @@ class ItemService (private val repo: ItemRepository){
 
     fun getItems(): List<Item> = repo.findAll()
 
-    fun save(item: Item) {
-        repo.save(item)
-    }
+    fun save(item: Item) = repo.save(item)
+
+    fun getItem(id: Int) = repo.getOne(id)
+
+    fun delete(id: Int) = repo.delete(getItem(id))
 }

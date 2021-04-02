@@ -11,9 +11,12 @@ class ItemController ( val itemService: ItemService){
     @GetMapping
     fun getAllItems() = itemService.getItems()
 
+    @GetMapping("/{id}")
+    fun getItem(@PathVariable id: Int) = itemService.getItem(id)
+
     @PostMapping
-    fun saveItem(@RequestBody item: Item): Item{
-        itemService.save(item)
-        return item
-    }
+    fun saveItem(@RequestBody item: Item) = itemService.save(item)
+
+    @DeleteMapping("/{id}")
+    fun deleteItem(@PathVariable id: Int) = itemService.delete(id)
 }
