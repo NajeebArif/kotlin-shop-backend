@@ -24,6 +24,7 @@ target/
 /nbbuild/
 /dist/
 /mvn/
+/data/
 /nbdist/
 /.mvn/
 /.nb-gradle/
@@ -36,3 +37,4 @@ build/
 mvnw
 mvnw.cmd
 *.db
+data/thriftshop.mv.db
