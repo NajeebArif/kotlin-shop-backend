@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/items")
+@CrossOrigin(origins = ["http://localhost:3000"])
 class ItemController ( val itemService: ItemService){
 
     @GetMapping
