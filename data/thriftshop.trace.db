@@ -1,0 +1,6 @@
+2021-04-03 02:07:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEM" not found; SQL statement:
+select item0_.id as id1_0_, item0_.item_image as item_ima2_0_, item0_.item_description as item_des3_0_, item0_.item_name as item_nam4_0_ from item item0_ [42102-200]
+2021-04-03 02:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ITEMS" not found; SQL statement:
+select item0_.id as id1_0_, item0_.item_image as item_ima2_0_, item0_.item_description as item_des3_0_, item0_.item_name as item_nam4_0_ from items item0_ [42102-200]
