@@ -6,11 +6,11 @@ import javax.persistence.*
 @Table(name = "ITEMS")
 data class Item(
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    val id: Long,
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long?,
     val itemName: String,
     @Column(name = "ITEM_IMAGE")
-    var img: String,
-    var itemDescription: String
+    val img: String?,
+    val itemDescription: String?
 )
 
